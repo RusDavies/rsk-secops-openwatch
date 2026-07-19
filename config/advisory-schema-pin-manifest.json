@@ -1,0 +1,318 @@
+{
+  "manifestVersion": 1,
+  "generatedAt": "2026-06-05T00:00:00.000Z",
+  "purpose": "Source-controlled schema/parser pin evidence required before enabling live advisory network fetchers.",
+  "liveFetchEnabled": false,
+  "sources": [
+    {
+      "sourceType": "csaf_document",
+      "enabledForLiveFetch": false,
+      "owner": "Security Engineering",
+      "notes": "CSAF 2.0 advisory document schema pin. Live fetch remains disabled until network fetcher, retry, cache, and drift-check orchestration exist.",
+      "artifacts": [
+        {
+          "name": "json_schema",
+          "sourceUrl": "https://docs.oasis-open.org/csaf/csaf/v2.0/os/schemas/csaf_json_schema.json",
+          "digest": "sha256:29c114b35b0a30831f1674f2ab8b3ed9b2890cfeaa63b924ac6ed9d70ef44262"
+        },
+        {
+          "name": "schema_version",
+          "schemaVersion": "CSAF 2.0 OS"
+        },
+        {
+          "name": "schema_digest",
+          "digest": "sha256:29c114b35b0a30831f1674f2ab8b3ed9b2890cfeaa63b924ac6ed9d70ef44262"
+        },
+        {
+          "name": "schema_source_url",
+          "sourceUrl": "https://docs.oasis-open.org/csaf/csaf/v2.0/os/schemas/csaf_json_schema.json",
+          "digest": "sha256:29c114b35b0a30831f1674f2ab8b3ed9b2890cfeaa63b924ac6ed9d70ef44262"
+        },
+        {
+          "name": "drift_test_fixture",
+          "digest": "sha256:eee260ac32c2ac8d1e1244caaf8899e648396f76a42a85b8f8b3af898d1b73c1"
+        }
+      ],
+      "driftTests": [
+        {
+          "sourceType": "csaf_document",
+          "fixture": "tests/fixtures/advisory-sources/csaf-2.0.json",
+          "expectedOutcome": "accepted"
+        }
+      ]
+    },
+    {
+      "sourceType": "csaf_vex",
+      "enabledForLiveFetch": false,
+      "owner": "Security Engineering",
+      "notes": "CSAF 2.0 schema plus VEX profile/status validation evidence.",
+      "artifacts": [
+        {
+          "name": "json_schema",
+          "sourceUrl": "https://docs.oasis-open.org/csaf/csaf/v2.0/os/schemas/csaf_json_schema.json",
+          "digest": "sha256:29c114b35b0a30831f1674f2ab8b3ed9b2890cfeaa63b924ac6ed9d70ef44262"
+        },
+        {
+          "name": "schema_version",
+          "schemaVersion": "CSAF 2.0 OS VEX profile"
+        },
+        {
+          "name": "schema_digest",
+          "digest": "sha256:29c114b35b0a30831f1674f2ab8b3ed9b2890cfeaa63b924ac6ed9d70ef44262"
+        },
+        {
+          "name": "schema_source_url",
+          "sourceUrl": "https://docs.oasis-open.org/csaf/csaf/v2.0/os/schemas/csaf_json_schema.json",
+          "digest": "sha256:29c114b35b0a30831f1674f2ab8b3ed9b2890cfeaa63b924ac6ed9d70ef44262"
+        },
+        {
+          "name": "profile_validation",
+          "digest": "sha256:98a31e9c541466995671fc19a3501c8eca669bdf5e3fe5bf0d0f92ac71573c20"
+        },
+        {
+          "name": "drift_test_fixture",
+          "digest": "sha256:98a31e9c541466995671fc19a3501c8eca669bdf5e3fe5bf0d0f92ac71573c20"
+        }
+      ],
+      "driftTests": [
+        {
+          "sourceType": "csaf_vex",
+          "fixture": "tests/fixtures/advisory-sources/csaf-vex.json",
+          "expectedOutcome": "accepted"
+        }
+      ]
+    },
+    {
+      "sourceType": "openvex",
+      "enabledForLiveFetch": false,
+      "owner": "Security Engineering",
+      "notes": "OpenVEX schema from the OpenVEX spec repository.",
+      "artifacts": [
+        {
+          "name": "json_schema",
+          "sourceUrl": "https://raw.githubusercontent.com/openvex/spec/main/openvex_json_schema.json",
+          "digest": "sha256:9373597734ed1d3ea5161a8b46d3866c4a8cfe76fd632fdd16aef01fb34b3238"
+        },
+        {
+          "name": "schema_version",
+          "schemaVersion": "OpenVEX main/openvex_json_schema.json"
+        },
+        {
+          "name": "schema_digest",
+          "digest": "sha256:9373597734ed1d3ea5161a8b46d3866c4a8cfe76fd632fdd16aef01fb34b3238"
+        },
+        {
+          "name": "schema_source_url",
+          "sourceUrl": "https://raw.githubusercontent.com/openvex/spec/main/openvex_json_schema.json",
+          "digest": "sha256:9373597734ed1d3ea5161a8b46d3866c4a8cfe76fd632fdd16aef01fb34b3238"
+        },
+        {
+          "name": "drift_test_fixture",
+          "digest": "sha256:65d6b975001b929c8dd85949f6614bf3d3e741c7b56296dac8ed38f80ec06162"
+        }
+      ],
+      "driftTests": [
+        {
+          "sourceType": "openvex",
+          "fixture": "tests/fixtures/advisory-sources/openvex.json",
+          "expectedOutcome": "accepted"
+        }
+      ]
+    },
+    {
+      "sourceType": "osv",
+      "enabledForLiveFetch": false,
+      "owner": "Security Engineering",
+      "notes": "OSV validation schema pin.",
+      "artifacts": [
+        {
+          "name": "json_schema",
+          "sourceUrl": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation/schema.json",
+          "digest": "sha256:7a511902b57297197b37298f6adaa2acb15f22b3f641bb9f547f19dcbe533ba8"
+        },
+        {
+          "name": "schema_version",
+          "schemaVersion": "OSV schema main/validation/schema.json"
+        },
+        {
+          "name": "schema_digest",
+          "digest": "sha256:7a511902b57297197b37298f6adaa2acb15f22b3f641bb9f547f19dcbe533ba8"
+        },
+        {
+          "name": "schema_source_url",
+          "sourceUrl": "https://raw.githubusercontent.com/ossf/osv-schema/main/validation/schema.json",
+          "digest": "sha256:7a511902b57297197b37298f6adaa2acb15f22b3f641bb9f547f19dcbe533ba8"
+        },
+        {
+          "name": "drift_test_fixture",
+          "digest": "sha256:ab7f7e49c4a06b5bc8357b2e4760da491206c6e7d8554bcfc6be6f7bd0daf54a"
+        }
+      ],
+      "driftTests": [
+        {
+          "sourceType": "osv",
+          "fixture": "tests/fixtures/advisory-sources/osv.json",
+          "expectedOutcome": "accepted"
+        }
+      ]
+    },
+    {
+      "sourceType": "nvd",
+      "enabledForLiveFetch": false,
+      "owner": "Security Engineering",
+      "notes": "NVD CVE API 2.0 schema pin.",
+      "artifacts": [
+        {
+          "name": "json_schema",
+          "sourceUrl": "https://csrc.nist.gov/schema/nvd/api/2.0/cve_api_json_2.0.schema",
+          "digest": "sha256:54828a0b69150dd6483083427b87e26b1226db0590470eedacf9c067964a6ba8"
+        },
+        {
+          "name": "schema_version",
+          "schemaVersion": "NVD CVE API 2.0"
+        },
+        {
+          "name": "schema_digest",
+          "digest": "sha256:54828a0b69150dd6483083427b87e26b1226db0590470eedacf9c067964a6ba8"
+        },
+        {
+          "name": "schema_source_url",
+          "sourceUrl": "https://csrc.nist.gov/schema/nvd/api/2.0/cve_api_json_2.0.schema",
+          "digest": "sha256:54828a0b69150dd6483083427b87e26b1226db0590470eedacf9c067964a6ba8"
+        },
+        {
+          "name": "api_version",
+          "apiVersion": "2.0"
+        },
+        {
+          "name": "drift_test_fixture",
+          "digest": "sha256:54531f70b572e9eba8cbf9a9ed9b21dbbc5fcf057568f355bfea3de9a90eb140"
+        }
+      ],
+      "driftTests": [
+        {
+          "sourceType": "nvd",
+          "fixture": "tests/fixtures/advisory-sources/nvd.json",
+          "expectedOutcome": "accepted"
+        }
+      ]
+    },
+    {
+      "sourceType": "rss",
+      "enabledForLiveFetch": false,
+      "owner": "Security Engineering",
+      "notes": "RSS requires fast-xml-parser package-lock evidence and entity/DOCTYPE disabled configuration before live ingestion.",
+      "artifacts": [
+        {
+          "name": "source_spec_url",
+          "sourceUrl": "https://www.rssboard.org/rss-specification",
+          "digest": "sha256:1610f254e9312593a67f6a58e7e7978b0d10c7cd247ec6d2382d1c6fd55079c9"
+        },
+        {
+          "name": "xml_parser",
+          "packageVersion": "fast-xml-parser@5.8.0"
+        },
+        {
+          "name": "parser_package_version",
+          "packageVersion": "fast-xml-parser@5.8.0"
+        },
+        {
+          "name": "parser_lock_digest",
+          "digest": "sha256:989cef3b65de471f92cfde229903e6a4c0df26c4f59d9ee8ed6bbcc5dff714a7"
+        },
+        {
+          "name": "doctype_entity_disabled",
+          "disabled": true
+        },
+        {
+          "name": "drift_test_fixture",
+          "digest": "sha256:91b2673cd8487790f371f82b5ce359db89674a158a6d708f2111038314b47f8f"
+        }
+      ],
+      "driftTests": [
+        {
+          "sourceType": "rss",
+          "fixture": "tests/fixtures/advisory-sources/rss.xml",
+          "expectedOutcome": "accepted"
+        }
+      ]
+    },
+    {
+      "sourceType": "atom",
+      "enabledForLiveFetch": false,
+      "owner": "Security Engineering",
+      "notes": "Atom requires fast-xml-parser package-lock evidence and entity/DOCTYPE disabled configuration before live ingestion.",
+      "artifacts": [
+        {
+          "name": "source_spec_url",
+          "sourceUrl": "https://www.rfc-editor.org/rfc/rfc4287.txt",
+          "digest": "sha256:3bd71d76289560c9e860151f39cebbdc402cfd8b788a62048d8dc42824f2d89c"
+        },
+        {
+          "name": "xml_parser",
+          "packageVersion": "fast-xml-parser@5.8.0"
+        },
+        {
+          "name": "parser_package_version",
+          "packageVersion": "fast-xml-parser@5.8.0"
+        },
+        {
+          "name": "parser_lock_digest",
+          "digest": "sha256:989cef3b65de471f92cfde229903e6a4c0df26c4f59d9ee8ed6bbcc5dff714a7"
+        },
+        {
+          "name": "doctype_entity_disabled",
+          "disabled": true
+        },
+        {
+          "name": "drift_test_fixture",
+          "digest": "sha256:244e25a1e695d7f46b2f98d8efa1512cf87de29bfed1354a8c8d4b4529ddc764"
+        }
+      ],
+      "driftTests": [
+        {
+          "sourceType": "atom",
+          "fixture": "tests/fixtures/advisory-sources/atom.xml",
+          "expectedOutcome": "accepted"
+        }
+      ]
+    },
+    {
+      "sourceType": "json_feed",
+      "enabledForLiveFetch": false,
+      "owner": "Security Engineering",
+      "notes": "JSON Feed 1.1 profile page pin until a maintained JSON Schema is selected.",
+      "artifacts": [
+        {
+          "name": "json_schema_or_profile",
+          "sourceUrl": "https://www.jsonfeed.org/version/1.1/",
+          "digest": "sha256:9775f930a0bc8c785fdae66f4dd0233e68f0d8dd69173b7aad146371f34e93d2"
+        },
+        {
+          "name": "schema_version",
+          "schemaVersion": "JSON Feed 1.1"
+        },
+        {
+          "name": "schema_digest",
+          "digest": "sha256:9775f930a0bc8c785fdae66f4dd0233e68f0d8dd69173b7aad146371f34e93d2"
+        },
+        {
+          "name": "schema_source_url",
+          "sourceUrl": "https://www.jsonfeed.org/version/1.1/",
+          "digest": "sha256:9775f930a0bc8c785fdae66f4dd0233e68f0d8dd69173b7aad146371f34e93d2"
+        },
+        {
+          "name": "drift_test_fixture",
+          "digest": "sha256:52e994e655dca1e3614f402aeced1a5a62b1a789aaeba55e919f9c437da5bd5c"
+        }
+      ],
+      "driftTests": [
+        {
+          "sourceType": "json_feed",
+          "fixture": "tests/fixtures/advisory-sources/json-feed.json",
+          "expectedOutcome": "accepted"
+        }
+      ]
+    }
+  ]
+}

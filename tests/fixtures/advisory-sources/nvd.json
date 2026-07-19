@@ -1,0 +1,27 @@
+{
+  "vulnerabilities": [
+    {
+      "cve": {
+        "id": "CVE-2026-5555",
+        "sourceIdentifier": "cve@example.org",
+        "published": "2026-06-01T08:00:00.000Z",
+        "lastModified": "2026-06-02T08:00:00.000Z",
+        "vulnStatus": "Modified",
+        "descriptions": [
+          { "lang": "en", "value": "Example appliance exposes an unauthenticated management action." }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            { "cvssData": { "baseSeverity": "CRITICAL", "baseScore": 9.8 } }
+          ]
+        },
+        "configurations": [
+          { "nodes": [ { "cpeMatch": [ { "criteria": "cpe:2.3:a:example:appliance:1.0:*:*:*:*:*:*:*" } ] } ] }
+        ],
+        "references": [
+          { "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5555" }
+        ]
+      }
+    }
+  ]
+}

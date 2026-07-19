@@ -1,0 +1,15 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Example Vendor JSON Feed Advisories",
+  "feed_url": "https://vendor.example/security/feed.json",
+  "items": [
+    {
+      "id": "EV-JSON-2026-0008",
+      "url": "https://vendor.example/security/EV-JSON-2026-0008",
+      "title": "Security advisory EV-JSON-2026-0008",
+      "summary": "JSON Feed discovery item for a vendor security advisory.",
+      "date_published": "2026-06-05T14:00:00Z",
+      "date_modified": "2026-06-05T14:30:00Z"
+    }
+  ]
+}

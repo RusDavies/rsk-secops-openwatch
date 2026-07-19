@@ -1,0 +1,16 @@
+{
+  "name": "@rsk-secops/openwatch",
+  "version": "0.1.0",
+  "description": "Public-safe vendor advisory and risk-signal normalization core.",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "test": "node --test",
+    "check": "node --test",
+    "check:advisory-schema-pins": "node scripts/check-advisory-schema-pins.mjs"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.8.0"
+  },
+  "devDependencies": {}
+}

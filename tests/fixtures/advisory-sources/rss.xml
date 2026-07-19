@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Example Vendor Security Advisories</title>
+    <link>https://vendor.example/security/rss.xml</link>
+    <item>
+      <guid>EV-RSS-2026-0006</guid>
+      <title>Security advisory EV-RSS-2026-0006</title>
+      <link>https://vendor.example/security/EV-RSS-2026-0006</link>
+      <pubDate>Fri, 05 Jun 2026 12:00:00 GMT</pubDate>
+      <description><![CDATA[RSS discovery item for a vendor security advisory.]]></description>
+    </item>
+  </channel>
+</rss>

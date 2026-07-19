@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Example Vendor Atom Advisories</title>
+  <entry>
+    <id>tag:vendor.example,2026:EV-ATOM-0007</id>
+    <title>Security advisory EV-ATOM-0007</title>
+    <link href="https://vendor.example/security/EV-ATOM-0007" />
+    <updated>2026-06-05T13:00:00Z</updated>
+    <summary>Atom discovery item for a vendor security advisory.</summary>
+  </entry>
+</feed>

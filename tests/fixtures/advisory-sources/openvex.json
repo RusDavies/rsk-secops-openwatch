@@ -1,0 +1,19 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "https://vendor.example/.well-known/openvex/example-2026-0003.json",
+  "author": "Example Vendor",
+  "timestamp": "2026-06-04T15:00:00Z",
+  "version": 1,
+  "statements": [
+    {
+      "vulnerability": { "name": "CVE-2026-3333" },
+      "products": [
+        { "@id": "pkg:generic/example-product-c@3.1.0" }
+      ],
+      "status": "under_investigation",
+      "justification": "Vendor investigation is still in progress.",
+      "action_statement": "Track the vendor advisory before changing customer posture.",
+      "timestamp": "2026-06-04T15:05:00Z"
+    }
+  ]
+}

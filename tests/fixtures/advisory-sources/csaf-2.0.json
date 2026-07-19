@@ -1,0 +1,39 @@
+{
+  "document": {
+    "title": "Vendor Product A security update",
+    "publisher": { "name": "Example Vendor", "category": "vendor" },
+    "tracking": {
+      "id": "EXAMPLE-2026-0001",
+      "status": "final",
+      "version": "2",
+      "initial_release_date": "2026-06-01T10:00:00Z",
+      "current_release_date": "2026-06-03T10:00:00Z",
+      "revision_history": [
+        { "number": "1", "date": "2026-06-01T10:00:00Z", "summary": "Initial advisory" },
+        { "number": "2", "date": "2026-06-03T10:00:00Z", "summary": "Added remediation" }
+      ]
+    },
+    "references": [
+      { "category": "self", "summary": "EV-SEC-0001", "url": "https://vendor.example/security/EV-SEC-0001" }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-1111",
+      "title": "Product A authentication bypass",
+      "notes": [
+        { "category": "summary", "text": "Authentication bypass affects Product A before 4.2.1." }
+      ],
+      "product_status": {
+        "known_affected": ["example-product-a-4.2.0"],
+        "fixed": ["example-product-a-4.2.1"]
+      },
+      "remediations": [
+        { "category": "vendor_fix", "details": "Upgrade Product A to 4.2.1." }
+      ],
+      "scores": [
+        { "cvss_v3": { "baseSeverity": "HIGH" } }
+      ]
+    }
+  ]
+}
