@@ -35,5 +35,4 @@ private deployment, support operations, or commercial roadmap details.
 
 ## License
 
-License selection is pending explicit approval. Until a license is added, no
-open-source license grant should be assumed.
+Licensed under the Apache License, Version 2.0. See `LICENSE`.

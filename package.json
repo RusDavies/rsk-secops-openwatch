@@ -2,6 +2,7 @@
   "name": "@rsk-secops/openwatch",
   "version": "0.1.0",
   "description": "Public-safe vendor advisory and risk-signal normalization core.",
+  "license": "Apache-2.0",
   "type": "module",
   "private": false,
   "scripts": {

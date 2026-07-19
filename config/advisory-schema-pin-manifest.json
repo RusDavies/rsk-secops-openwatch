@@ -218,7 +218,7 @@
         },
         {
           "name": "parser_lock_digest",
-          "digest": "sha256:989cef3b65de471f92cfde229903e6a4c0df26c4f59d9ee8ed6bbcc5dff714a7"
+          "digest": "sha256:dace535231d01ec664e608cde099a9624397a5444d3b426887f1eb50167b4472"
         },
         {
           "name": "doctype_entity_disabled",
@@ -258,7 +258,7 @@
         },
         {
           "name": "parser_lock_digest",
-          "digest": "sha256:989cef3b65de471f92cfde229903e6a4c0df26c4f59d9ee8ed6bbcc5dff714a7"
+          "digest": "sha256:dace535231d01ec664e608cde099a9624397a5444d3b426887f1eb50167b4472"
         },
         {
           "name": "doctype_entity_disabled",
