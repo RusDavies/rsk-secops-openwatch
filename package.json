@@ -5,6 +5,15 @@
   "license": "Apache-2.0",
   "type": "module",
   "private": false,
+  "exports": {
+    "./advisory-fixture-parsers": "./lib/advisory-fixture-parsers.mjs",
+    "./advisory-production-adapters": "./lib/advisory-production-adapters.mjs",
+    "./advisory-schema-drift-check": "./lib/advisory-schema-drift-check.mjs",
+    "./advisory-schema-pin-manifest": "./lib/advisory-schema-pin-manifest.mjs",
+    "./advisory-schema-pinning": "./lib/advisory-schema-pinning.mjs",
+    "./advisory-source-normalization": "./lib/advisory-source-normalization.mjs",
+    "./risk-score": "./lib/risk-score.mjs"
+  },
   "scripts": {
     "test": "node --test",
     "check": "node --test",
